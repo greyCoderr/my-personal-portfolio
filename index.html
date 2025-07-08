@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerald Dev | Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="dark">
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn" class="scroll-btn">↑</button>
+  <button id="toggleTheme" class="toggle-btn"><span id="themeIcon">🌙</span></button>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-container">
+        <img src="Assets/GeraldDev Logo.png" alt="GeraldDevLOGO" class="heroLogo" />
+        <span class="logo-text">Gerald Dev</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1 class="heroName">Hi, I'm <span class="accent">Gerald Dev</span></h1>
+        <h2>Web Developer & Designer</h2>
+        <p>I build responsive and professional web experiences focused on performance and usability.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="primary-btn">View My Work</a>
+          <a href="#contact" class="secondary-btn">Contact Me</a>
+        </div>
+      </div>
+      <img src="Assets/profilePic1.jpg" alt="Hero Photo" class="hero-photo" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about dark-section">
+    <div class="about-container">
+      <h2 class="sectionHeader">About Me</h2>
+      <img src="Assets/GeraldDev Logo.png" alt="Your Photo" class="profile-pic" />
+      <img src="Assets/profilePic2.jpeg" alt="Your Photo" class="profile-pic" />
+        <p class="aboutText">I'm a passionate Web Designer & Developer with experience in both frontend and backend development.
+          My journey began in junior high with a frontend development subject that sparked my interest in creating modern, user-friendly websites only using <b class="accent">HTML and CSS</b>.
+          At 19, I dove into backend development using <b class="accent">Java</b>, driven by curiosity and a love for solving problems.
+
+          This led me to explore deeper concepts like Object-Oriented Programming and Data Structures.<br><br>
+          I'm currently a <b class="accent">3rd-year BS Information Technology student</b> at System Technology Institute,
+          where I've sharpened my skills in programming and design. I graduated <b class="accent">With Honors</b> from King Thomas Learning Academy, Inc. under the STEM strand when I was High School.<br><br>
+
+          As a freelance developer, I've worked on real-world projects such as <b class="accent">Kopra Price Conversion</b> and <b class="accent">Egg's Flowershop Inventory</b>.
+          These experiences taught me how to collaborate with clients and deliver practical solutions.
+          I'm also proud to have won <span class="accent">1st place at the TechDays 2025 <b>Hackathon</b></span> and to be a <b class="accent">Dean's Lister</b> with top awards in Web Development and OOP.<br><br>
+
+          <button class="modal-btn text-link" data-modal="modalAbout">More Info →</button></p>
+          
+          <div id="modalAbout" class="modal hidden">
+            <div class="modal-content">
+              <button class="close">&times;</button>
+              <h3>More Details</h3>
+              <img src="Assets/thumnailOffer.png" class="modal-img" />
+              <h3>What I Can Help You With:</h3>
+              <ul>
+                <li>Create responsive, mobile-friendly websites</li>
+                <li>Build custom dashboards and user interfaces</li>
+                <li>Fix layout, responsiveness, or style issues (HTML/CSS)</li>
+                <li>Design a website prototype using Figma</li>
+                <li>Create console-based program using C and Java</li>
+                <li>Build GUI Program using Java</li>
+                <li>Design tables for MySQL</li>
+              </ul>
+              <a href="#contact" target="blank" class="accent">Contact me →</a>
+            </div>
+          </div>
+
+      <div class="tech-icons">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" style="width: 60px; height: auto;" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" style="width: 60px; height: auto;"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" style="width: 60px; height: auto;"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" style="width: 60px; height: auto;"/> 
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" style="width: 60px; height: auto;"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" style="width: 60px; height: auto;"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" style="width: 60px; height: auto;"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+   <section id="projects" class="projects">
+    <h2 class="sectionHeader">Projects</h2>
+    <div class="project-grid">
+        <div class="project-card" data-aos="fade-up">
+            <img src="Assets/project1.png" alt="Project 1" class="project-img" />
+            <h3>Basketball Statistic Record</h3>
+            <p class="projectShortDescription">It's a player statistics tracker designed to help officiating staff record in-game data such as
+              points, assists, rebounds, steals, blocks, and fouls more efficiently by replacing traditional paper-based stat sheets with a digital system.</p>
+            <button class="modal-btn text-link" data-modal="modal1">More Info →</button>
+        </div>
+
+        <div class="project-card" data-aos="fade-up">
+            <img src="Assets/project2.png" alt="Project 2" class="project-img" />
+            <h3>Bella Ciao Cafe Ordering System</h3>
+            <p class="projectShortDescription">This project is a customer order management system that allows cashiers to efficiently
+              record, track, and manage orders based on customer preferences—offering a faster and more organized alternative to handwritten order-taking.</p>
+            <button class="modal-btn text-link" data-modal="modal2">More Info →</button>
+        </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project3.png" alt="Project 2" class="project-img" />
+          <h3>Kopra Price Conversion</h3>
+          <p class="projectShortDescription">A console-based Java app that calculates kopra prices and automates profit-sharing between farmers and laborers—built for coconut farmers and komprada owners.</p>
+          <button class="modal-btn text-link" data-modal="modal3">More Info →</button>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project4.png" alt="Project 2" class="project-img" />
+          <h3>Eggs Flowershop Inventory</h3>
+          <p class="projectShortDescription">A Java-based ordering system designed for cashiers to manage product availability, quickly total orders, and streamline item lookup—faster than traditional paper-based methods.</p>
+          <button class="modal-btn text-link" data-modal="modal4">More Info →</button>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project5.png" alt="Project 2" class="project-img" />
+          <h3>Soil Nutrient Analyzer</h3>
+          <p class="projectShortDescription">A Figma-based prototype that simulates soil testing using a smart pen device.
+            It identifies soil type, analyzes NPK nutrient levels, and provides fertilizer recommendations for improved soil health.</p>
+          <button class="modal-btn text-link" data-modal="modal5">More Info →</button>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project6.png" alt="Project 2" class="project-img" />
+          <h3>Personal Portfolio for client 1</h3>
+          <p class="projectShortDescription">A simple and modern portfolio site based from her mockup prototype featuring Home, Skills, Projects, and Contact sections.
+            It built using HTML, CSS, JavaScript, and Tailwind, with EmailJS integration and social icons for enhanced user interaction.</p>
+          <button class="modal-btn text-link" data-modal="modal6">More Info →</button>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project7.png" alt="Project 2" class="project-img" />
+          <h3>Personal Portfolio for client 2</h3>
+          <p class="projectShortDescription">A modified web portfolio project enhanced with new sections like Services and Contact,
+            built to meet academic requirements and showcase the client's skills, work, contact information and convenient communication using EmailJS.</p>
+          <button class="modal-btn text-link" data-modal="modal7">More Info →</button>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+          <img src="Assets/project9.png" alt="Project 2" class="project-img" />
+          <h3>Admin Dashboard Prototype 2</h3>
+          <p class="projectShortDescription">A customized simple admin dashboard with a monochrome blue layout, interactive analytics,
+            and a user management section—built to meet our final Web Development project requirements.</p>
+          <button class="modal-btn text-link" data-modal="modal9">More Info →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 1 Modal -->
+  <div id="modal1" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Basketball Statistic Record</h3>
+      <img src="Assets/project1.png" class="modal-img" />
+      <p>This was my final performance task during my 2nd semester in first-year college.
+        Built in Java with a GUI interface, the project was designed to record and manage basketball player statistics in real time. <br><br>
+        The system allows officiating staff to input and track stats such as points, assists, rebounds, steals, blocks, and fouls with also the help of ArrayList.
+        By replacing manual paper-based stat sheets, the system speeds up data entry and ensures accuracy during games.
+        Using conditions and logical operators, the program can calculate team stats, determine standout players, and generate a points-based system for ranking. 
+        The result is a more efficient and organized way to handle game data.</p>
+      <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div id="modal2" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Bella Ciao Cafe Ordering System</h3>
+      <img src="Assets/project2.png" class="modal-img" />
+      <p>This project was developed for our 1st Semester Final Performance Task in college.
+        The goal was to create a working system for a real business in our town. 
+        We partnered with Bella Ciao Cafe, a local shop known for its aesthetic and professional ambiance. <br><br>
+        After gathering the necessary data from the cafe, my partner created a detailed UI/UX mockup and
+        prototype based on the system's specific needs—including colors, fonts, and layout structure.
+        I then translated the design into functional code using Java. <br><br>
+        The system is designed for cashiers to easily list, find, remove and track customer orders more efficiently than traditional handwritten notes.  
+        I used CRUD functionality using ArrayList and followed Object-Oriented Programming (OOP) principles, as required by our project rubrics.
+        I also used conditions and operators to handle price calculations and change output, and integrated
+        file handling to generate order receipt, helping both the cashier and customers track and organize transactions in real time.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div id="modal3" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Kopra Price Conversion</h3>
+      <img src="Assets/project3.png" class="modal-img" />
+      <p>This was my first project as a freelance Java developer, created for a client who needed a console-based program as part of their school requirements.
+        Since the project didn't require a user interface, I used ASCII design elements to make the console layout more visually appealing and structured. <br><br>
+        The system calculates the price of kopra, whether it's still on the tree or already processed, and includes a feature to compute the
+        profit-sharing percentage between farmers and their laborers using conditions and operations. Furthermore, I used OOP principle to make the code clean, organized, and easy to maintain.
+        Additionally, I implemented file handling to generate service receipts for each transaction, making the system more practical and professional even with only in console-based system. <br><br>
+        This program is especially useful for kopra who want a simple, efficient way to handle pricing and profit distribution.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 4 Modal -->
+  <div id="modal4" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Eggs Flowershop Inventory</h3>
+      <img src="Assets/project4.png" class="modal-img" />
+      <p>This project was developed for a Fiverr client who needed an ordering system for their flower shop.
+        The client provided a mockup prototype and a specific hex color palette to match the desired design.
+        I built the system using Java with a graphical user interface (GUI), as requested. <br><br>
+        The program allows the cashier to manage product availability, input customer orders based on
+        product type and floral design, and automatically calculate total costs.
+        I implemented full CRUD functionality using ArrayList to easily add, track, and update products.
+        Conditional statements and operators were used to calculate and validate orders efficiently.
+        Additionally, I added an order receipt feature using file handling, giving the system a more professional touch.
+        This solution significantly improves the ordering process compared to traditional paper-based methods.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 5 Modal -->
+  <div id="modal5" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Soil Nutrient Analyzer</h3>
+      <img src="Assets/project5.png" class="modal-img" />
+      <p>The Soil Nutrient Analyzer is a Figma prototype that simulates a smart soil-testing app using a pen-like device.
+        It guides users through a 4-step flow: starting the analysis, simulating the test, showing soil type and NPK nutrient levels, and offering fertilizer recommendations.<br><br>
+        Designed with a clean and intuitive interface, the app helps users—especially farmers—make better decisions about soil health and fertilizer use.
+        It demonstrates how simple technology can support smart, sustainable agriculture.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 6 Modal -->
+  <div id="modal6" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Personal Portfolio for client 1</h3>
+      <img src="Assets/project6.png" class="modal-img" />
+      <p>This portfolio project was our final performance task for Web Development. My classmate asked for
+        help in building a simple portfolio based on her mockup prototype. I developed the site using
+        HTML, CSS, JavaScript, and Tailwind as the foundation. <br><br>
+        To improve usability, I integrated EmailJS for the contact form, making it easier for clients to get in touch with her.
+        I also refined the contact section by replacing plain text links with social media icons, which better complemented the
+        design and gave the site a more professional and modern feel. In recognition of my work, I received extra allowance for helping with the project.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 7 Modal -->
+  <div id="modal7" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Personal Portfolio for client 2</h3>
+      <img src="Assets/project7.png" class="modal-img" />
+      <p>This portfolio was also part of our final performance task for our Web Development subject.
+        My classmate already had an existing web portfolio, but due to additional requirements set by our professor,
+        he asked for my help to update and enhance it. <br><br>
+        The original version only included a hero landing page and a project section.
+        I added a new Services page to showcase his current skills and the types of work he can offer clients,
+        as well as a Contact section with links to his social media, email address, and Facebook page highlighting his design work.
+        I also integrated EmailJS to allow more convenient client communication.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Project 9 Modal -->
+  <div id="modal9" class="modal hidden">
+    <div class="modal-content">
+      <button class="close">&times;</button>
+      <h3>Admin Dashboard Prototype</h3>
+      <img src="Assets/project9.png" class="modal-img" />
+      <p>One of my classmates also asked for help enhancing an existing admin dashboard assigned by our professor as our final performance task in Web Development.
+        The goal was to improve the layout and add new features to make it look more professional and responsive. <br><br>
+        The original dashboard had a basic design with limited functionality. I applied a monochrome blue theme using a specific hex color palette provided by my classmate.
+        I also added interactive graphs that respond when clicking on summary cards (Users, Visits, Revenue), showing trends across weekly, monthly, and yearly views.
+        Additionally, I created a new “Users” section in the navigation, which displays user info and profile pictures, highlights recently added accounts,
+        and includes features to view details and delete users.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <h2 class="sectionHeader">Testimonials</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-block">
+          <p>“Gerald Dev is a passionate and reliable developer who brought my portfolio design with clean and modern code.
+            He followed my mockup closely, improved the contact section with icon-based links, and even integrated EmailJS for smoother client communication.
+            His attention to detail and how he elevated the design beyond what I envisioned.”</p> <br>
+          <footer><strong>— Althea Galle, <span class="accent">UI Designer IT Student</strong></span></footer>
+          <a data-modal="modal6" class="projectTestimonial-btn">View Project</a>
+        </blockquote>
+
+        <blockquote class="testimonial-block">
+          <p>“I'm really impressed with how carefully Gerald followed all my instructions and delivered exactly what I needed. He transformed my idea into a fast,
+            efficient ordering system that makes managing products and calculating totals so much easier. One of the most creative and detail-oriented developers I've worked with”</p> <br>
+          <footer><strong>— Jenard Reaves, <span class="accent">Fiverr Client</strong></span></footer>
+        <a data-modal="modal4" class="projectTestimonial-btn">View Project</a>
+        </blockquote>
+
+        <blockquote class="testimonial-block">
+          <p>“Gerald Dev did an amazing job improving my portfolio.
+            He added the features I needed, made the design responsive, and integrated EmailJS for easier contact.
+            I'm really impressed with his skills and attention to detail.” </p><br>
+          <footer><strong>— Rich Saralde, <span class="accent">Digital & Graphic Designer</strong></span></footer>
+          <a data-modal="modal7" class="projectTestimonial-btn">View Project</a>
+        </blockquote>
+
+        <blockquote class="testimonial-block">
+          <p>“Gerald Dev transformed my dashboard into a clean, professional-looking admin panel. He followed my design preferences perfectly
+            and added interactive features like graphs and user management. I really appreciate his help and attention to detail.”</p> <br>
+          <footer><strong>— John Carl Gado, <span class="accent">Web Development IT Student</strong></span></footer>
+        <a data-modal="modal9" class="projectTestimonial-btn">View Project</a>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-container">
+      <h2 class="sectionHeader">Contact Me</h2>
+      <p>Interested in working together? Fill out the form below or email me directly.</p>
+
+      <div class="contact-wrapper">
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <textarea name="message" rows="5" placeholder="Your message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+
+        <div class="contact-info">
+          <p><strong><accent class="accent">Email:</accent></strong> geralddev03@gmail.com</p>
+          <p><strong class="accent">Location:</strong> Philippines</p>
+          <div class="social-links">
+          <a href="https://mail.google.com/mail/?view=cm&to=geralddev03@gmail.com&su=Let's%20Work%20Together&body=Hi%20Gerald Dev," target="_blank" title="Email"">
+            <i class="fas fa-envelope icon"></i>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~019eaece489537472b">
+            <i class="fab fa-upwork icon"></i>
+          </a>
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("JUb8R8ZhkzvBOKnrr");
+  })();
+</script>
+  <script src="script.js"></script>
+</body>
+</html>
