@@ -1,2 +1,2 @@
 # my-personal-portfolio
-Developed a fully responsive personal portfolio website with smooth dark/light mode toggle, interactive modals, project showcase, testimonials, and a working contact form integrated with EmailJS with toast notifications. 
+Built a fully responsive personal portfolio featuring dark/light mode toggle, interactive modals, project showcase, testimonials, and EmailJS-integrated contact form with toast notifications. Built with HTML, CSS, JavaScript, and Figma, focusing on clean, user-friendly, professional design.
